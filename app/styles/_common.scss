@@ -1,0 +1,117 @@
+html {
+    font-size: 9px;
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:414px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width:639px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:640px){
+    html {
+        font-size: 15px;
+    }
+}
+
+//让页面最大宽度固定在414px
+@media (min-width: 640px) {
+    .container-fluid {
+        max-width: 640px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+body {
+    padding-bottom: 20px;
+    &.with-fixed-title-bar {
+        padding-top: 50px;
+    }
+}
+
+.site-footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    p {
+        color: #999;
+        margin-top: 10px;
+    }
+}
+
+
+//标题栏
+.title-bar {
+    position: relative;
+    color: #fff;
+    line-height: 50px;
+    .container-fluid {
+        background-color: #e50000;
+    }
+    .action-l {
+        position: absolute;
+        height: 100%;
+        left: 15px;
+        top: 0;
+        .close {}
+        .action {
+            font-size: 1.6rem;
+        }
+    }
+    .action-r {
+        position: absolute;
+        height: 100%;
+        right: 15px;
+        top: 0;
+        font-size: 1.6rem;
+        //主动作按钮
+        .action {
+            &:hover {
+            }
+        }
+        //帮助按钮
+        .help {
+            color: #b2b2b2;
+            font-size: 1.45rem;
+            .icon {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                line-height: 16px;
+                font-size: 1.3rem;
+                border-radius: 9px;
+                text-align: center;
+                margin-left: 5px;
+            }
+        }
+    }
+    .title {
+        text-align: center;
+        color: #fff;
+        font-size: 1.8rem;
+        img {
+            margin-top: -4px;
+            margin-right: 5px;
+        }
+    }
+    &.title-bar-fix-top {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+

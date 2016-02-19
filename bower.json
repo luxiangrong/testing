@@ -1,0 +1,17 @@
+{
+  "name": "testing",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "iCheck": "~1.0.2",
+    "Swiper": "swiper#~3.3.1",
+    "fastclick": "~1.0.6"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss"
+      ]
+    }
+  }
+}

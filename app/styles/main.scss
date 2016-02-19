@@ -1,0 +1,178 @@
+@import "variable";
+//======================bootstrap====================================================
+// Core variables and mixins
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+// Reset and dependencies
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+//======================bootstrap====================================================
+//======================iCheck=======================================================
+@import "icheck";
+@import "iconfont";
+@import "common";
+.page-1 {
+    .main-content {
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 3rem;
+            &.form-title {
+                margin-top: 50px;
+            }
+        }
+        h5 {
+            font-size: 2rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        ol {
+            li {
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+.page-2 {
+    .table {
+        margin-bottom: 5px;
+        &.table-index {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e50000;
+        }
+    }
+    .index-container {
+        .col-xs-12 {}
+        .cd-container {
+            vertical-align: middle;
+            .cd {
+                border: 2px solid #aaa;
+                padding: 5px 20px;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            p {
+                text-align: center;
+            }
+            h1 {
+                margin: 0;
+                text-align: center;
+            }
+        }
+        .question-index {
+            table {
+                td {
+                    padding: 1px;
+                    border: none;
+                }
+            }
+            .btn {
+                padding: 3px 3px;
+            }
+        }
+    }
+    .questions-container {
+        .question {
+            font-size: 1.8rem;
+            padding-bottom: 15px;
+        }
+        .answers {
+            .answer {
+                font-size: 1.5rem;
+                margin: 5px 0;
+                label {
+                    display: block;
+                    padding: 8px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    @include clearfix();
+                    .icheckbox_square-orange {
+                        float: left;
+                        width: 22px !important;
+                        margin-right: 5px;
+                    }
+                    > span {}
+                }
+                &.correct {
+                    background-color: #75e275;
+                    background-color: transparent;
+                }
+                &.incorrect {
+                    background-color: #f55048;
+                    background-color: transparent;
+                }
+            }
+        }
+        .tijie {
+            color: #e50000;
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .submit {
+        margin-top: 20px;
+    }
+    .result {
+        color: #e50000;
+        text-align: center;
+        h1 {
+            font-size: 2rem;
+        }
+        .score {
+            font-size: 8rem;
+            small {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.icheckbox_line-green,
+.iradio_line-green,
+.icheckbox_line-red,
+.iradio_line-red {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+
+.page-3 {
+    h1 {
+      text-align: center;
+      color: #e50000;
+      margin: 30px 0;
+    }
+    .table {
+        thead {
+            th {
+                text-align: center;
+            }
+        }
+        tbody {
+            td.sort {
+                span {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    display: block;
+                    background-color: #e50000;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 1.4rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
